@@ -138,6 +138,12 @@ h3{
     color: #252525a6;
 }
 
+.card-tec {
+    font-size: 11px;
+    color: #414141;
+    padding: 0;
+}
+
 @media (max-width: 768px) {
     .header {
         padding-top: 10px;
