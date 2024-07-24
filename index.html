@@ -1,98 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EM - Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
     <header class="header">
-        <div class="circle">
-            <img src="imgs/foto_edson.jpeg" alt="Foto">
-        </div>
+      <div class="circle">
+        <img src="imgs/foto_edson.jpeg" alt="Foto" />
+      </div>
     </header>
     <main>
-        <section id="hero">
-            <div>
-                <h2>Edson Monteiro Loiola</h2>
-                <h3>Desenvolvedor  Junior <br> Essence Mediacom Brasil</h3>
+      <section id="hero">
+        <div>
+          <h2>Edson Monteiro Loiola</h2>
+          <h3>Desenvolvedor Junior <br/> Essence Mediacom Brasil</h3>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2>Principais Entregas</h2>
+        <p id="portfolio-p">
+          Aqui estão alguns dos projetos que atuei até o momento na Essence
+          Mediacom Brasil.</p>
+
+        <div class="portfolio-cards">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-content">
+              <h3 class="card-title">API Mercado Livre Ads</h3>
+              <p class="card-description">
+                Automação para extrair dados das campanhas veículadas na
+                plataforma.</p>
+              <p class="card-tec">Tecnologias: Python | BigQuery</p>
+              <p class="card-date">Data: Julho de 2024</p>
             </div>
-        </section>
+          </div>
+          <!-- -->
 
-        <section id="portfolio">
-            <h2>Entregas</h2>
-            <p id="portfolio-p">Aqui estão alguns dos projetos que atuei até o momento na Essence Mediacom Brasil.</p>
-            <div class="portfolio-cards">
+          <!-- card -->
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-content">
+              <h3 class="card-title">Upload Criativos</h3>
+              <p class="card-description">
+                Automação para salvar peças dos criativos em um Storage do
+                Google Cloud.</p>
+              <p class="card-tec">Tecnologias: Python | GCP</p>
+              <p class="card-date">Data: Abril de 2024</p>
+            </div>
+          </div>
+          <!-- -->
 
-                <!-- card -->
-                <div class="card">
-                    <div class="card-header">                        
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">API Mercado Livre Ads</h3>
-                        <p class="card-description">Automação para extrair dados das campanhas veículadas na plataforma.</p> 
-                        <p class="card-tec"> Tecnologias: Python | BigQuery</p>
-                        <p class="card-date">Data: Julho de 2024</p>
-                    </div>
-                </div>
-                <!-- -->
+          <!-- card -->
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-content">
+              <h3 class="card-title">Assinatura Digital de Contratos</h3>
+              <p class="card-description">
+                Integração com a API do Adobe e DocuSign para Assinatura
+                Eletrônica de contrato digital.</p>
+              <p class="card-tec">Tecnologias: C# .Net | GCP</p>
+              <p class="card-date">Data: Novembro de 2023</p>
+            </div>
+          </div>
+          <!-- -->
 
-                <!---->
-                <div class="card">
-                    <div class="card-header">                        
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Upload Criativos</h3>
-                        <p class="card-description">Automação para salvar peças dos criativos em um Storage do Google Cloud.</p>
-                        <p class="card-tec"> Tecnologias: Python | GCP </p>                           
-                        <p class="card-date">Data: Abril de 2024</p>
-                    </div>
-                </div>
-                <!-- -->
-
-                <!--  -->
-                <div class="card">
-                    <div class="card-header">                        
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Assinatura Digital de Contratos</h3>
-                        <p class="card-description">Integração com a API do Adobe e DocuSign para Assinatura Eletrônica de contrato digital. </p>
-                        <p class="card-tec"> Tecnologias: C# .Net | GCP </p>
-                        <p class="card-date">Data: Novembro de 2023</p>
-                    </div>
-                </div>
-                <!-- -->
-
-                <!-- -->
-                <div class="card">
-                    <div class="card-header">                        
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Integração de APIs</h3>
-                        <p class="card-description">Automação para extrair dados de plataformas de veiculação de media. Incluí Manutenção, correções e melhorias no processo ao longo de perído. </p>
-                        <p class="card-tec"> Tecnologias: C# .Net | BigQuery </p>
-                        <p class="card-date">Data: Janeiro de 2021</p>
-                    </div>
-                </div>
-                <!-- -->
-
-                <!-- -->
-                <div class="card">
-                    <div class="card-header">                        
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">SFE</h3>
-                        <p class="card-description">Suporte, Melhorias e Correções de Bugs no SFE (Sistema Financeiro). </p>
-                        <p class="card-tec"> Tecnologias: C# .Net | GCP | Vue.js </p>      
-                        <p class="card-date">Data: Desde Janeiro de 2020</p>
-                    </div>
-                </div>
-                <!-- -->      
-        </section>
+          <!-- card -->
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-content">
+              <h3 class="card-title">Integração de APIs</h3>
+              <p class="card-description">
+                Automação para extrair dados de plataformas de veiculação de
+                media. Incluí Manutenção, correções e melhorias no processo ao
+                longo de perído.</p>
+              <p class="card-tec">Tecnologias: C# .Net | BigQuery</p>
+              <p class="card-date">Data: Janeiro de 2021</p>
+            </div>
+          </div>
+          <!-- -->
+        
+          <!-- card -->
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-content">
+              <h3 class="card-title">SFE</h3>
+              <p class="card-description">
+                Suporte, Melhorias e Correções de Bugs no SFE (Sistema Financeiro).</p>
+              <p class="card-tec">Tecnologias: C# .Net | GCP | Vue.js</p>
+              <p class="card-date">Data: Desde Janeiro de 2020</p>
+            </div>
+          </div>
+          <!-- -->
+          
+        </div>
+      </section>
+      <footer>       
+            <p class="footer">"As grandes ideias surgem da observação dos pequenos detalhes" - Augusto Cury.</p><br>          
+    </footer>
     </main>
-</body>
+  </body>
 </html>
