@@ -85,74 +85,212 @@ h3{
     color: #464646;
 }
 
+
+
 .portfolio-cards {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-    width: 70%;
-    margin: 0 auto;    
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto; 
+    max-width: 700px; /* Limitar a largura total */
+    grid-template-columns: repeat(3, 1fr); /* 3 cards por linha */
 }
 
+/* Estilo do Card */
 .card {
-    display: flex;
+
+    display: grid;
     flex-direction: column;
     border: 1px solid #ffffff;
     border-radius: 7px;
     overflow: hidden;
     box-shadow: 0 5px 8px rgb(90, 90, 90);
-    width: 220px;
+    width: 250px;
+    height: 300px; /* Ajustar conforme necessário */
     transition: box-shadow 0.3s, transform 0.3s;   
     background: linear-gradient(135deg, #ececec 25%, #ffffff 50%);
+    grid-template-rows: auto 1fr auto; /* Dividir em 3 seções: título, conteúdo, botão */
+
+
 }
 
 .card:hover {
     box-shadow: 0 12px 15px rgb(40, 40, 40);
-    transform: scale(1.02);
+    transform: scale(1.00);
 }
 
 .card-header {
     width: 100%;
-    height:15px; /* Altura da faixa rosa */
-    background-color: #4060d7; /* Cor rosa */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height:15px; 
+    background-color: #4060d7;
 }
 
 .card-content {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinhar o conteúdo e botão */
 }
 
 .card-title {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 10px;
-    color: #000000;
+    color: #000;
 }
 
 .card-description {
+    margin-top: 40px;
     font-size: 14px;
     color: #202020;
 }
 
-.card-date {
-    font-size: 12px;
-    color: #252525a6;
+.card-button {
+    padding: 8px 12px;
+    background-color: #4060d7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+    font-size: 14px;
 }
 
-.card-tec {
-    font-size: 11px;
-    color: #414141;
-    padding: 0;
+.card-button:hover {
+    background-color: #303f9f;
 }
+
+/* Modal Maior */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow-y: auto; /* Permite rolagem quando o conteúdo é maior que a tela */
+}
+
+
+.modal-content hr {
+    border: none;
+    border-top: 1px solid #e4e3e3;
+    margin: 30px 0;
+  }
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 800px; /* Limita a largura do modal */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-height: 90vh; /* Limita a altura do modal a 90% da altura da tela */
+    overflow-y: auto; /* Adiciona rolagem interna se o conteúdo for maior que a altura */
+}
+
+.modal-close {
+    color: #000;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #303f9f;
+}
+
+/* Modal Texto e Ícones */
+.modal-title {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.modal-description,
+.modal-challenge,
+.modal-results,
+.modal-role,
+.modal-tec,
+.modal-date {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.modal-content i {
+    margin-right: 8px;
+    color: #4060d7;
+    margin-top: 15px;
+}
+
+
+
+
+/* Estilo do Card Placeholder */
+.card-placeholder {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed #cccccc; /* Borda tracejada */
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 300px; /* Mesmo tamanho dos outros cards */
+    color: #999999; /* Cor suave para o texto */
+    font-style: italic; /* Texto em itálico */
+    background-color: #f9f9f9; /* Fundo suave */
+}
+
+.card-placeholder:hover {
+    box-shadow: 0 12px 15px rgb(82, 82, 82);
+    transform: scale(1.00);
+}
+
+/* Estilo do texto "Em breve" */
+.card-placeholder-title {
+    font-size: 16px;
+    color: #999999;
+}
+
+
+
+
+
+
+
+
+
 
 .footer {
     border-top: 1px solid #f0f0f0;
     width: 100%;
-    color: #a8a8a8;
+    color: #919191;
     padding: 10px;
     text-align: center;
     font-size: 17px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .portfolio-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards por linha em tablets */
+        gap: 20px; /* Espaçamento entre os cards */
+        padding: 0 15px; /* Adicionar padding para centralizar */
+    }
+
+    .card {
+        height: auto; /* Ajuste automático da altura */
+    }
 }
 
 @media (max-width: 768px) {
@@ -168,13 +306,54 @@ h3{
     #hero {
         padding: 50px 20px;
     }
+    .portfolio-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centralizar os cards no contêiner */
+        gap: 15px; /* Espaçamento entre os cards */
+        padding: 0 10px;
+        grid-template-columns: 1fr; /* 1 card por linha em telas menores */
+    }
+
     .card {
-        width: 70%;
+        height: auto; /* Ajuste automático da altura */
+        width: 100%; /* Deixar o card ocupar toda a largura disponível */
+        max-width: 300px; /* Definir um limite de largura para não ficar muito grande */
+        padding: 15px;
+    }
+
+    .card-button {
+        font-size: 12px; /* Reduzir o tamanho do botão em telas pequenas */
     }
 }
 
 @media (max-width: 480px) {
+    
     .card {
-        width: calc(100% - 20px); /* 1 card por linha em telas muito pequenas */
+        height: auto;
+        width: 90%; /* O card ocupa 100% da largura do contêiner */
+        max-width: 300px; /* Limitar a largura máxima do card no mobile */
+        padding: 0;
+    }
+
+    .portfolio-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centralizar os cards */
+        gap: 15px; /* Ajustar o gap para mobile */
+        padding: 0 10px;
+    }
+
+    .card-title {
+        font-size: 15px; /* Ajustar tamanho da fonte */
+    }
+
+    
+    .card-description {
+        font-size: 14px;
+    }
+    .card-button {
+        font-size: 14px;
+        padding: 10px;
     }
 }
