@@ -48,15 +48,15 @@
               <p class="card-description">
                 <i class="fas fa-info-circle"></i> Automação para validar se as Urls dos sites das marcas de Stellantis estão ativas. 
               </p>
-              <button class="card-button" onclick="openModal('modal-6')">
+              <button class="card-button" onclick="openModal('modal-7')">
                 Saiba Mais
               </button>
             </div>
           </div>
           <!-- Modal Maior -->
-          <div id="modal-6" class="modal">
+          <div id="modal-7" class="modal">
             <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-6')"
+              <span class="modal-close" onclick="closeModal('modal-7')"
                 >&times;</span
               >
               <h3 class="modal-title">Validador de URLs</h3>
@@ -95,15 +95,15 @@
               <p class="card-description">
                 <i class="fas fa-info-circle"></i> Automação para extrair e armazenar diariamente os dados das campanhas de Globo Ads veículadas por Stellantis. 
               </p>
-              <button class="card-button" onclick="openModal('modal-1')">
+              <button class="card-button" onclick="openModal('modal-6')">
                 Saiba Mais
               </button>
             </div>
           </div>
           <!-- Modal Maior -->
-          <div id="modal-1" class="modal">
+          <div id="modal-6" class="modal">
             <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-1')"
+              <span class="modal-close" onclick="closeModal('modal-6')"
                 >&times;</span
               >
               <h3 class="modal-title">Extrator de Dados Globo Ads</h3>
@@ -146,15 +146,15 @@
               <p class="card-description">
                 <i class="fas fa-info-circle"></i> Automação para extrair e armazenar diariamente os dados das campanhas de Mercado Livre Ads.
               </p>
-              <button class="card-button" onclick="openModal('modal-2')">
+              <button class="card-button" onclick="openModal('modal-5')">
                 Saiba Mais
               </button>
             </div>
           </div>
           <!-- Modal Maior -->
-          <div id="modal-2" class="modal">
+          <div id="modal-5" class="modal">
             <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-2')"
+              <span class="modal-close" onclick="closeModal('modal-5')"
                 >&times;</span
               >
               <h3 class="modal-title">API Mercado Livre Ads</h3>
@@ -196,10 +196,65 @@
           <div class="card">
             <div class="card-header"></div>
             <div class="card-content">
-              <h3 class="card-title">Upload Criativos</h3>
+              <h3 class="card-title">Tela de Criativos</h3>
               <p class="card-description">
-                <i class="fas fa-info-circle"></i> Automação para salvar peças
-                dos criativos em um Storage do Google Cloud.
+                <i class="fas fa-info-circle"></i> Tela para realizar o Upload de criativos de forma manual e armazená-los no Google Cloud Storage.
+              </p>
+              <button class="card-button" onclick="openModal('modal-4')">
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+          <!-- Modal Maior -->
+          <div id="modal-4" class="modal">
+            <div class="modal-content">
+              <span class="modal-close" onclick="closeModal('modal-4')"
+                >&times;</span
+              >
+              <h3 class="modal-title">Tela de Criativos</h3>
+              <p class="modal-description">
+                <i class="fas fa-info-circle"></i>Tela para realizar o Upload de criativos de forma manual e armazená-los no Google Cloud Storage.</p>
+              <hr />
+              <p class="modal-challenge">
+                <i class="fas fa-exclamation-triangle"></i><b>Desafio:</b> Criar uma tela para que seja possível realizar o Upload de criativos de forma manual.
+                <br>Os criativos podem ser imagens, vídeos ou links de postagens. A taxonomia e o trackcode das campanhas são digitados na tela.
+                O processo também transforma vídeos em gifs.
+                
+                <br><br>
+                Os arquivos de imagens e gifs são armazenados no Storage. Os dados de texto (taxonomia e trackcode) são armazenados no BigQuery.
+              </p>
+              <p class="modal-results">
+                <i class="fas fa-trophy"></i><b>Resultados:</b> Agilizar o processo manual do Upload do criativo que não foi possível extrair de forma automática.
+                Também preserva o histórico do arquivo, tornando-o acessível para uso em dashboards e relatórios. </p>
+              <p class="modal-role">
+                <i class="fas fa-user"></i><b>Meu papel:</b> Desenvolvimento do script
+                de automação.
+              </p>
+              <p class="modal-tec">
+                <i class="fas fa-briefcase"></i><b>Clientes:</b> Samsung
+              </p>
+              <hr />
+              <p class="modal-tec">
+                <i class="fas fa-code"></i><b>Tecnologias:</b> Python | BigQuery |
+                Google Storage | API | C# | Angular
+              </p>
+              <p class="modal-date">
+                <i class="fas fa-calendar-alt"></i><b>Data:</b> Julho de 2024
+              </p>
+            </div>
+          </div>
+          <!----------------------- Fim ------------------->
+
+
+
+          <!----------------------- Inicio ------------------->
+          <!-- card -->
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-content">
+              <h3 class="card-title">Criativos - Meta</h3>
+              <p class="card-description">
+                <i class="fas fa-info-circle"></i> Automação para extrair e armazenar os criativos de Meta em um Storage do Google Cloud.
               </p>
               <button class="card-button" onclick="openModal('modal-3')">
                 Saiba Mais
@@ -214,14 +269,16 @@
               >
               <h3 class="modal-title">Upload Criativos</h3>
               <p class="modal-description">
-                <i class="fas fa-info-circle"></i>Automação para salvar peças
-                dos criativos em um Storage do Google Cloud.
+                <i class="fas fa-info-circle"></i> Automação para extrair e armazenar os criativos de Meta em um Storage do Google Cloud.
               </p>
               <hr />
               <p class="modal-challenge">
-                <i class="fas fa-exclamation-triangle"></i><b>Desafio:</b> Projeto em andamento com o objetivo de garantir que os criativos de campanhas 
-                sejam armazenados permanentemente na nuvem, mantendo um histórico completo. <br>
-                A automação coleta esses arquivos de uma fonte específica e os armazena no Google Cloud Storage.
+                <i class="fas fa-exclamation-triangle"></i><b>Desafio:</b> Realizar o download dos criativos das campanhas nos formatos (jpeg, png, vídeo) e             
+                armazenar permanentemente. O processo também transforma vídeos em gifs e realiza o Web Scraping para extrair a taxonomia e o trackcode das campanhas.
+                
+                <br><br>
+                A automação coleta esses arquivos da biblioteca de criativos da META e os armazena no Storage.
+                Os dados de texto (taxonomia e trackcode) são armazenados no BigQuery.
               </p>
               <p class="modal-results">
                 <i class="fas fa-trophy"></i><b>Resultados:</b> Preservação do histórico de arquivos, evitando que expirem e 
@@ -237,7 +294,7 @@
               <hr />
               <p class="modal-tec">
                 <i class="fas fa-code"></i><b>Tecnologias:</b> Python | BigQuery |
-                Google Storage | AppScript | C#
+                Google Storage | API | C# | Web Scraping
               </p>
               <p class="modal-date">
                 <i class="fas fa-calendar-alt"></i><b>Data:</b> Julho de 2024
@@ -256,15 +313,15 @@
                 <i class="fas fa-info-circle"></i> Automação para extração de dados de diversas 
                 plataformas de veiculação de mídia.
               </p>
-              <button class="card-button" onclick="openModal('modal-4')">
+              <button class="card-button" onclick="openModal('modal-2')">
                 Saiba Mais
               </button>
             </div>
           </div>
           <!-- Modal Maior -->
-          <div id="modal-4" class="modal">
+          <div id="modal-2" class="modal">
             <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-4')"
+              <span class="modal-close" onclick="closeModal('modal-2')"
                 >&times;</span
               >
               <h3 class="modal-title">Integração de APIs</h3>
@@ -311,15 +368,15 @@
               <p class="card-description">
                 <i class="fas fa-info-circle"></i> Suporte e manutenção ao SFE/SGB, sistema de gerenciamento financeiro da empresa.
               </p>
-              <button class="card-button" onclick="openModal('modal-5')">
+              <button class="card-button" onclick="openModal('modal-1')">
                 Saiba Mais
               </button>
             </div>
           </div>
           <!-- Modal Maior -->
-          <div id="modal-5" class="modal">
+          <div id="modal-1" class="modal">
             <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-5')"
+              <span class="modal-close" onclick="closeModal('modal-1')"
                 >&times;</span
               >
               <h3 class="modal-title">SFE/SGB</h3>
