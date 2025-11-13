@@ -11,15 +11,15 @@
 body {
 margin: 0;
 font-family: 'Ubuntu', 'Fira Mono', monospace, sans-serif;
-background: linear-gradient(120deg, var(--bg) 75%, var(--primary) 100%);
-color: var(--white);
+background: linear-gradient(120deg, #16161a 75%, #232946 100%);
+color: #f4f4f4;
 min-height: 100vh;
 display: flex;
 flex-direction: column;
 }
 .header {
 width: 100%;
-background: linear-gradient(120deg, var(--primary) 50%, var(--secondary) 100%);
+background: linear-gradient(120deg, #232946 50%, #4060d7 100%);
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -31,9 +31,9 @@ box-shadow: 0 0 16px 0 rgba(74, 103, 211, 0.317);
 width: 180px;
 height: 180px;
 border-radius: 50%;
-background: var(--glass);
+background: rgba(36, 40, 57, 0.7);
 backdrop-filter: blur(8px);
-border: 3px solid var(--accent);
+border: 3px solid #b4e7f0;
 overflow: hidden;
 margin-bottom: 14px;
 box-shadow: 0 2px 16px 0 rgba(31, 38, 135, 0.2);
@@ -49,17 +49,17 @@ text-align: center;
 .hero-text h1 {
 font-family: 'Fira Mono', monospace;
 font-size: 1.7rem;
-color: var(--white);
+color: #f4f4f4;
 margin: 0;
 letter-spacing: 1px;
 }
 .hero-text .code {
-color: var(--accent);
+color: #b4e7f0;
 font-size: 1.2rem;
 }
 .hero-text h2 {
 font-size: 1rem;
-color: var(--accent);
+color: #b4e7f0;
 margin: 8px 0 0 0;
 font-family: 'Fira Mono', monospace;
 }
@@ -71,7 +71,7 @@ margin: 20px auto;
 padding: 6px;
 }
 #portfolio h2 {
-color: var(--accent);
+color: #b4e7f0;
 font-family: 'Fira Mono', monospace;
 font-size: 1.3rem;
 margin-bottom: 8px;
@@ -92,13 +92,13 @@ row-gap: 33px;
 justify-content: center;
 }
 .card {
-background: var(--glass);
+background: rgba(36, 40, 57, 0.7);
 border-radius: 10px;
 box-shadow: 0 8px 32px 0 rgba(42, 92, 172, 0.25), 0 2px 8px 0 rgba(64, 96, 215, 0.15);
 display: flex;
 flex-direction: column;
 transition: transform 0.18s, box-shadow 0.18s;
-border: 1.5px solid var(--primary);
+border: 1.5px solid #232946;
 overflow: hidden;
 max-width: 250px;
 min-height: 300px;
@@ -108,7 +108,7 @@ position: relative;
 .card:hover {
 transform: translateY(-4px) scale(1.04);
 box-shadow: 0 16px 32px 0 rgba(64, 96, 215, 0.18), 0 2px 8px 0 rgba(238, 187, 195, 0.15);
-border-color: var(--accent);
+border-color: #b4e7f0;
 background: rgba(36, 40, 57, 0.82);
 }
 .card-header {
@@ -116,14 +116,14 @@ height: 38px;
 display: flex;
 align-items: center;
 justify-content: center;
-background: linear-gradient(90deg, var(--secondary) 60%, var(--primary) 100%);
-color: var(--white);
+background: linear-gradient(90deg, #4060d7 60%, #232946 100%);
+color: #f4f4f4;
 font-size: 1.3rem;
 }
 .card-title {
 font-family: 'Fira Mono', monospace;
 font-size: 1rem;
-color: var(--accent);
+color: #b4e7f0;
 margin: 10px;
 min-height: 36px;
 display: flex;
@@ -141,8 +141,8 @@ text-align: center;
 margin-top: 30px;
 }
 .card-button {
-background: var(--accent);
-color: var(--primary);
+background: #b4e7f0;
+color: #232946;
 border: none;
 border-radius: 6px;
 padding: 8px 12px;
@@ -160,8 +160,8 @@ text-align: center;
 transform: scale(0.96);
 }
 .card-button:hover, .modal-footer-close:hover {
-background: var(--secondary);
-color: var(--white);
+background: #4060d7;
+color: #f4f4f4;
 }
 .card-placeholder {
 display: flex;
@@ -169,7 +169,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 background: rgba(255,255,255,0.03);
-border: 2px dashed var(--accent);
+border: 2px dashed #b4e7f0;
 border-radius: 7px;
 color: #bdbdbd;
 font-style: italic;
@@ -204,8 +204,8 @@ from { opacity: 0;}
 to { opacity: 1;}
 }
 .modal-content {
-background: var(--modal-glass);
-color: var(--white);
+background: rgba(36, 40, 57, 0.95);
+color: #f4f4f4;
 border-radius: 14px;
 padding: 32px 20px 20px 20px;
 max-width: 800px;
@@ -223,7 +223,7 @@ from { opacity: 0; transform: translateY(30px);}
 to { opacity: 1; transform: translateY(0);}
 }
 .modal-content h3 {
-color: var(--accent);
+color: #b4e7f0;
 font-family: 'Fira Mono', monospace;
 margin-top: 0;
 font-size: 1.15rem;
@@ -249,20 +249,20 @@ gap: 8px;
 
 }
 .modal-content li b {
-color: var(--accent);
+color: #b4e7f0;
 margin-right: 4px;
 }
 
 .modal-content hr {
     border: none;
-    border-top: 1px solid var(--accent);
+    border-top: 1px solid #b4e7f0;
     margin: 30px 0;
   }
 
 .modal-close {
 position: absolute;
 top: 10px; right: 16px;
-color: var(--accent);
+color: #b4e7f0;
 font-size: 1.4rem;
 cursor: pointer;
 font-weight: bold;
@@ -271,11 +271,11 @@ background: none;
 border: none;
 }
 .modal-close:hover {
-color: var(--white);
+color: #f4f4f4;
 }
 .modal-footer-close {
-background: var(--accent);
-color: var(--primary);
+background: #b4e7f0;
+color: #232946;
 border: none;
 border-radius: 6px;
 padding: 7px 14px;
@@ -291,13 +291,13 @@ text-align: center;
 }
 .footer {
 width: 100%;
-background: var(--primary);
+background: #232946;
 color: #98aacc67;
 text-align: center;
 padding: 16px 0 8px 0;
 font-size: 1rem;
 letter-spacing: 0.2px;
-border-top: 1.5px solid var(--secondary);
+border-top: 1.5px solid #4060d7;
 margin-top: auto;
 display: flex;
 flex-direction: column;
@@ -307,7 +307,7 @@ gap: 10px;
 .footer-contact {
 margin-top: 8px;
 font-size: 1.05rem;
-color: var(--accent);
+color: #b4e7f0;
 text-decoration: none;
 display: inline-flex;
 align-items: center;
@@ -315,7 +315,7 @@ gap: 6px;
 transition: color 0.2s;
 }
 .footer-contact:hover {
-color: var(--white);
+color: #f4f4f4;
 text-decoration: underline;
 }
 @media (max-width: 1024px) {
