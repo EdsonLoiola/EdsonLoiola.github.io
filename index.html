@@ -1,551 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EM - Portfólio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="circle">
-        <img src="imgs/foto_edson.jpeg" alt="Foto" />
-      </div>
-    </header>
-    <main>
-      <section id="hero">
-        <div>
-          <h2>Edson Monteiro Loiola</h2>
-          <h3>Desenvolvedor Pleno</h3>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edson Monteiro Loiola | Portfólio Tech</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Ubuntu:wght@400;700&display=swap"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="profile-glass">
+      <img src="imgs/foto_edson.jpeg" alt="Foto de Edson" />
+    </div>
+    <div class="hero-text">
+      <h1><span class="code">&lt;</span>Edson Monteiro Loiola<span class="code">/&gt;</span></h1>
+      <h2><i class="fas fa-terminal"></i> Desenvolvedor Pleno</h2>
+    </div>   
+  </header>
+  <main>
+    <section id="portfolio">
+      <h2><i class="fas fa-code"></i> Principais Entregas</h2>
+      <p class="portfolio-desc">
+        Confira alguns projetos que tive participação na Essence Mediacom Brasil.
+      </p>
+      <div class="portfolio-cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-header"><i class="fas fa-database"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> Pipeline de Migração de Dados </h3>
+            <p class="card-description">
+              Automação para migrar os dados do BigQuery para um bucket, permitindo que um cliente externo tenha acesso a essas informações.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre Pipeline de Migração de Dados" onclick="openModal('modal-1')">Saiba Mais</button>
+          </div>
         </div>
-      </section>
-
-      <section id="portfolio">
-        <h2>Principais Entregas</h2>
-        <p id="portfolio-p">
-          Aqui estão alguns dos projetos em que atuei até o momento na Essence
-          Mediacom Brasil.
-        </p>
-
-       <div class="portfolio-cards">
-
-  <!----------------------- Inicio ------------------->
-          <!-- card -->
-          <div class="card">
-            <div class="card-header"></div>
-            <div class="card-content">
-              <h3 class="card-title">Pipeline de Migração de Dados</h3>
-              <p class="card-description">
-                <i class="fas fa-info-circle"></i> Automação para migrar os dados do BigQuery para um bucket, permitindo que um cliente externo tenha acesso a essas informações.
-              </p>
-              <button class="card-button" onclick="openModal('modal-9')">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <!-- Modal Maior -->
-          <div id="modal-9" class="modal">
-            <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-9')"
-                >&times;</span
-              >
-              <h3 class="modal-title">Pipeline de Migração de Dados</h3>
-              <p class="modal-description">
-                <i class="fas fa-info-circle"></i> Automação para migrar os dados do BigQuery para um bucket, permitindo que um cliente externo tenha acesso a essas informações.</p>
+         <!-- Modal 1 -->
+        <div id="modal-1" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal1-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-1')">&times;</button>
+            <h3 id="modal1-title"><i class="fas fa-cloud-upload-alt"></i> Pipeline de Migração de Dados</h3>
+            <ul>
+              <li><p><i class="fas fa-exclamation-triangle"></i> <b>Desafio:</b> Criar um processo para disponibilizar os dados internos do cliente em um servidor, garantindo que ele possa acessá-los de forma simples e segura.</p></li>
+              <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b> Transferência segura dos dados do cliente.</p></li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Desenvolvimento do projeto.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Mars</li>
               <hr />
-              <p class="modal-challenge">
-                <i class="fas fa-exclamation-triangle"></i><b> Desafio:</b> Criar um processo para disponibilizar os dados internos do cliente em um servidor, garantindo que ele possa acessá-los de forma simples e segura.<br>
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Python | Storage | BigQuery</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Setembro de 2025</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-header"><i class="fas fa-user-shield"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> Data Clean Room - DCR</h3>
+            <p class="card-description">
+               Um ambiente seguro e criptografado para automação de dados de CRM e modelagem de audiências e ativação nas plataformas de mídias.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre Data Clean Room" onclick="openModal('modal-2')">Saiba Mais</button>
+          </div>
+        </div>
+        <!-- Modal 2 -->
+        <div id="modal-2" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal2-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-2')">&times;</button>
+            <h3 id="modal2-title"><i class="fas fa-shield-alt"></i> Data Clean Room - DCR</h3>
+            <ul>
+              <li> <p><i class="fas fa-exclamation-triangle"></i>  <b> Desafio:</b> 
+                Para atender às necessidades do projeto, a arquitetura foi estruturada em três grandes etapas: <br><br>
                         
-              </p>
-              <p class="modal-results">
-                <i class="fas fa-trophy"></i><b>Resultados:</b> Transfêrencia segura dos dados cliente.
-              </p>
-              <p class="modal-role">
-                <i class="fas fa-user"></i><b>Meu papel:</b> Desenvolvimento do projeto.
-              </p>
-              <p class="modal-tec">
-                <i class="fas fa-briefcase"></i><b>Clientes:</b> Mars
-              </p>
-              <hr />
-              <p class="modal-tec">
-                <i class="fas fa-code"></i><b>Tecnologias:</b> Python | Storage | Big Query
-              </p>
-              <p class="modal-date">
-                <i class="fas fa-calendar-alt"><b></i> Data:</b> Setembro de 2025
-              </p>
-            </div>
-          </div>
-  <!----------------------- Fim ------------------->
-        
+                  <b>1 ª</b> - Extração, normalização e criptografia dos dados: <br>
+                      Coleta, padronização e proteção dos dados.<br><br>
 
-  <!----------------------- Inicio ------------------->
-          <!-- card -->
-          <div class="card">
-            <div class="card-header"></div>
-            <div class="card-content">
-              <h3 class="card-title">Data Clean Room - DCR</h3>
-              <p class="card-description">
-                <i class="fas fa-info-circle"></i> É um ambiente seguro e criptografado para automação de dados de CRM e 
-                site para a modelagem de audiências de alto valor e ativação nas plataformas de mídias. 
-              </p>
-              <button class="card-button" onclick="openModal('modal-8')">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <!-- Modal Maior -->
-          <div id="modal-8" class="modal">
-            <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-8')"
-                >&times;</span
-              >
-              <h3 class="modal-title">Data Clean Room - DCR</h3>
-              <p class="modal-description">
-                <i class="fas fa-info-circle"></i> É um ambiente seguro e criptografado para automação de dados de CRM e 
-                site para a modelagem de audiências de alto valor e ativação nas plataformas de mídias.</p>
-              <hr />
-              <p class="modal-challenge">
-                <i class="fas fa-exclamation-triangle"></i><b> Desafio:</b> Para atender às necessidades do projeto, a arquitetura foi estruturada em três grandes etapas: <br><br>
-                      
-                <b>1 ª</b> - Extração, normalização e criptografia dos dados: <br>
-                     Coleta, padronização e proteção dos dados.<br><br>
+                  <b>2 ª</b> - Modelagem e mapeamento das audiências:<br>
+                      Estruturação das audiências conforme requisitos de cada plataforma.<br><br>
 
-                <b>2 ª</b> - Modelagem e mapeamento das audiências:<br>
-                     Estruturação das audiências conforme requisitos de cada plataforma.<br><br>
+                  <b>3 ª</b> - Ativação das audiências nas plataformas:<br>
+                        Envio e ativação via APIs de forma automatizada.<br></p></li>
+              <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b>Nos primeiros testes usando audiencias geradas pelo DCR, houve um aumento significativo no CTR.</p></li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Desenvolvimento do projeto.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Mars</li>
+              <hr />
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Python | DBT | GCP | SFTP | BigQuery</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Agosto de 2025</li>
+            </ul>
+          </div>
+        </div>
 
-                <b>3 ª</b> - Ativação das audiências nas plataformas:<br>
-                      Envio e ativação via APIs de forma automatizada.<br><br>
-              
-              </p>
-              <p class="modal-results">
-                <i class="fas fa-trophy"></i><b>Resultados:</b> Nos primeiros testes usando audiencias geradas pelo DCR, houve um aumento significativo no CTR.
-              </p>
-              <p class="modal-role">
-                <i class="fas fa-user"></i><b>Meu papel:</b> Desenvolvimento do projeto.
-              </p>
-              <p class="modal-tec">
-                <i class="fas fa-briefcase"></i><b>Clientes:</b> Mars
-              </p>
-              <hr />
-              <p class="modal-tec">
-                <i class="fas fa-code"></i><b>Tecnologias:</b> Python | DBT | GCP | SFTP
-              </p>
-              <p class="modal-date">
-                <i class="fas fa-calendar-alt"><b></i> Data:</b> Agosto de 2025
-              </p>
-            </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-header"><i class="fas fa-link"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> Validador de URLs</h3>
+            <p class="card-description">
+              Automação para validar se as Urls dos sites das marcas de Stellantis estão ativas.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre Validador de URLs" onclick="openModal('modal-3')">Saiba Mais</button>
           </div>
-          <!----------------------- Fim ------------------->
+        </div>
+        <!-- Modal 3 -->
+        <div id="modal-3" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal3-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-3')">&times;</button>
+            <h3 id="modal3-title"><i class="fas fa-search"></i> Validador de URLs</h3>
+            <ul>
+              <li><i class="fas fa-exclamation-triangle"></i> <b>Desafio:</b>  Criar um script que valida as URls dos sites das marcas para saber se estão fora do ar.</li>
+              <li><i class="fas fa-trophy"></i> <b>Resultados:</b> A equipe recebe uma notificação por e-mail com as URLs que apresentam problemas, permitindo agir rapidamente para evitar impactos nas campanhas que direcionam para o site.</li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Desenvolvimento do script de automação.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Stellantis</li>
+              <hr />            
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Python | Sheets</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Novembro de 2024</li>
+            </ul>
+          </div>
+        </div>
 
-          <!----------------------- Inicio ------------------->
-          <!-- card -->
-          <div class="card">
-            <div class="card-header"></div>
-            <div class="card-content">
-              <h3 class="card-title">Validador de URLs</h3>
-              <p class="card-description">
-                <i class="fas fa-info-circle"></i> Automação para validar se as Urls dos sites das marcas de Stellantis estão ativas. 
-              </p>
-              <button class="card-button" onclick="openModal('modal-7')">
-                Saiba Mais
-              </button>
-            </div>
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-header"><i class="fas fa-bullhorn"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> Extrator de Dados Globo Ads</h3>
+            <p class="card-description">
+              Automação para extrair e armazenar dados das campanhas de Globo Ads.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre Extrator de Dados Globo Ads" onclick="openModal('modal-4')">Saiba Mais</button>
           </div>
-          <!-- Modal Maior -->
-          <div id="modal-7" class="modal">
-            <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-7')"
-                >&times;</span
-              >
-              <h3 class="modal-title">Validador de URLs</h3>
-              <p class="modal-description">
-                <i class="fas fa-info-circle"></i> Automação para validar se as Urls dos sites das marcas de Stellantis estão ativas. </p>
-              <hr />
-              <p class="modal-challenge">
-                <i class="fas fa-exclamation-triangle"></i><b> Desafio:</b> Criar um script que valida as URls dos sites das marcas para saber se estão fora do ar.</p>
-              <p class="modal-results">
-                <i class="fas fa-trophy"></i><b>Resultados:</b>A equipe recebe uma notificação por e-mail com as URLs que apresentam problemas, permitindo agir rapidamente para evitar impactos nas campanhas que direcionam para o site.
-              </p>
-              <p class="modal-role">
-                <i class="fas fa-user"></i><b>Meu papel:</b> Desenvolvimento do script
-                de automação.
-              </p>
-              <p class="modal-tec">
-                <i class="fas fa-briefcase"></i><b>Clientes:</b> Stellantis
-              </p>
-              <hr />
-              <p class="modal-tec">
-                <i class="fas fa-code"></i><b>Tecnologias:</b> Python | Sheets
-              </p>
-              <p class="modal-date">
-                <i class="fas fa-calendar-alt"><b></i> Data:</b> Novembro de 2024
-              </p>
-            </div>
-          </div>
-          <!----------------------- Fim ------------------->
-          
-          <!----------------------- Inicio ------------------->
-          <!-- card -->
-          <div class="card">
-            <div class="card-header"></div>
-            <div class="card-content">
-              <h3 class="card-title">Extrator de Dados Globo Ads</h3>
-              <p class="card-description">
-                <i class="fas fa-info-circle"></i> Automação para extrair e armazenar diariamente os dados das campanhas de Globo Ads veículadas por Stellantis. 
-              </p>
-              <button class="card-button" onclick="openModal('modal-6')">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <!-- Modal Maior -->
-          <div id="modal-6" class="modal">
-            <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-6')"
-                >&times;</span
-              >
-              <h3 class="modal-title">Extrator de Dados Globo Ads</h3>
-              <p class="modal-description">
-                <i class="fas fa-info-circle"></i> Automação para extrair e armazenar diariamente os dados das campanhas de Globo Ads veículadas por Stellantis.
-              </p>
-              <hr />
-              <p class="modal-challenge">
-                <i class="fas fa-exclamation-triangle"></i><b> Desafio:</b> Solução desenvolvida para extrair dados diretamente do BigQuery da Globo Ads e armazená-los no 
-                BigQuery interno da empresa. Devido à ausência de uma API oficial, a automação foi implementada como alternativa eficiente.
-              </p>
-              <p class="modal-results">
-                <i class="fas fa-trophy"></i><b>Resultados:</b> Redução de aproximadamente 30 minutos no tempo diário da equipe, 
-                eliminando a necessidade de processos manuais repetitivos todos os dias.
-              </p>
-              <p class="modal-role">
-                <i class="fas fa-user"></i><b>Meu papel:</b> Desenvolvimento do script
-                de automação.
-              </p>
-              <p class="modal-tec">
-                <i class="fas fa-briefcase"></i><b>Clientes:</b> Stellantis
-              </p>
-              <hr />
-              <p class="modal-tec">
-                <i class="fas fa-code"></i><b>Tecnologias:</b> Python | BigQuery
-              </p>
-              <p class="modal-date">
-                <i class="fas fa-calendar-alt"><b></i> Data:</b> Setembro de 2024
-              </p>
-            </div>
-          </div>
-          <!----------------------- Fim ------------------->
+        </div>
+        <!-- Modal 4 -->
+        <div id="modal-4" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal4-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-4')">&times;</button>
+            <h3 id="modal4-title"><i class="fas fa-ad"></i> Extrator de Dados Globo Ads</h3>
+            <ul>
+              <li><i class="fas fa-exclamation-triangle"></i> <b>Desafio:</b> Extrair dados do BigQuery da Globo Ads e armazenar internamente.</li>
+              <li><i class="fas fa-trophy"></i> <b>Resultados:</b> Redução de 30 minutos diários em processos manuais.</li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Desenvolvimento do script de automação.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Stellantis</li>
+              <hr />            
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Python | BigQuery</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Setembro de 2024</li>
+            </ul>
 
-          <!----------------------- Inicio ------------------->
-          <!-- card -->
-          <div class="card">
-            <div class="card-header"></div>
-            <div class="card-content">
-              <h3 class="card-title">API Mercado Livre Ads</h3>
-              <p class="card-description">
-                <i class="fas fa-info-circle"></i> Automação para extrair e armazenar diariamente os dados das campanhas de Mercado Livre Ads.
-              </p>
-              <button class="card-button" onclick="openModal('modal-5')">
-                Saiba Mais
-              </button>
-            </div>
           </div>
-          <!-- Modal Maior -->
-          <div id="modal-5" class="modal">
-            <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-5')"
-                >&times;</span
-              >
-              <h3 class="modal-title">API Mercado Livre Ads</h3>
-              <p class="modal-description">
-                <i class="fas fa-info-circle"></i>Automação para extrair e
-                armazenar diariamente os dados das campanhas de Mercado Livre
-                Ads.
-              </p>
-              <hr />
-              <p class="modal-challenge">
-                <i class="fas fa-exclamation-triangle"></i><b>Desafio:</b> Extrir os
-                dados via API e armazenar no BigQuery.
-              </p>
-              <p class="modal-results">
-                <i class="fas fa-trophy"></i><b>Resultados:</b> A automação proporcionou maior controle e agilidade na obtenção de dados.<br><br>
-              <b>Samsung:</b> Redução de aproximadamente 25 minutos diários no tempo do analista, que antes montava manualmente três relatórios. <br><br>
-            <b>Stellantis:</b> Economia de cerca de 20 minutos por dia para cada uma das cinco marcas que o time gerencia.
-              </p>
-              <p class="modal-role">
-                <i class="fas fa-user"></i><b>Meu papel:</b> Desenvolvimento do script
-                de automação.
-              </p>
-              <p class="modal-tec">
-                <i class="fas fa-briefcase"></i><b>Clientes:</b> Samsung | Stellantis
-              </p>
-              <hr />
-              <p class="modal-tec">
-                <i class="fas fa-code"></i><b>Tecnologias:</b> Python | BigQuery
-              </p>
-              <p class="modal-date">
-                <i class="fas fa-calendar-alt"></i><b>Data:</b> Julho de 2024
-              </p>
-            </div>
-          </div>
-          <!----------------------- Fim ------------------->
+        </div>
 
-          <!----------------------- Inicio ------------------->
-          <!-- card -->
-          <div class="card">
-            <div class="card-header"></div>
-            <div class="card-content">
-              <h3 class="card-title">Tela de Criativos</h3>
-              <p class="card-description">
-                <i class="fas fa-info-circle"></i> Tela para realizar o Upload de criativos de forma manual e armazená-los no Google Cloud Storage.
-              </p>
-              <button class="card-button" onclick="openModal('modal-4')">
-                Saiba Mais
-              </button>
-            </div>
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-header"><i class="fab fa-shopify"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> API Mercado Livre Ads</h3>
+            <p class="card-description">
+              Automação para extrair e armazenar diariamente os dados das campanhas de Mercado Livre Ads.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre API Mercado Livre Ads" onclick="openModal('modal-5')">Saiba Mais</button>
           </div>
-          <!-- Modal Maior -->
-          <div id="modal-4" class="modal">
-            <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-4')"
-                >&times;</span
-              >
-              <h3 class="modal-title">Tela de Criativos</h3>
-              <p class="modal-description">
-                <i class="fas fa-info-circle"></i>Tela para realizar o Upload de criativos de forma manual e armazená-los no Google Cloud Storage.</p>
-              <hr />
-              <p class="modal-challenge">
-                <i class="fas fa-exclamation-triangle"></i><b>Desafio:</b> Criar uma tela para que seja possível realizar o Upload de criativos de forma manual.
+        </div>
+        <!-- Modal 5 -->
+        <div id="modal-5" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal5-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-5')">&times;</button>
+            <h3 id="modal5-title"><i class="fas fa-store"></i> API Mercado Livre Ads</h3>
+            <ul>
+              <li><i class="fas fa-exclamation-triangle"></i> <b>Desafio:</b>Extrair os dados via API e armazenar no BigQuery.</li>
+              <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b>A automação proporcionou maior controle e agilidade na obtenção de dados.<br><br>
+              <b>*Samsung:</b> Redução de aproximadamente 25 minutos diários no tempo do analista, que antes montava manualmente três relatórios. <br><br>
+            <b>*Stellantis:</b> Economia de cerca de 20 minutos por dia para cada uma das cinco marcas que o time gerencia.</p></li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Desenvolvimento do script de automação.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Samsung | Stellantis</li>
+              <hr />            
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Python | BigQuery</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Julho de 2024</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="card-header"><i class="fas fa-image"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> Tela de Criativos</h3>
+            <p class="card-description">
+              Tela para realizar o Upload de criativos de forma manual e armazená-los no Google Cloud Storage.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre Tela de Criativos" onclick="openModal('modal-6')">Saiba Mais</button>
+          </div>
+        </div>
+         <!-- Modal 6 -->
+        <div id="modal-6" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal6-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-6')">&times;</button>
+            <h3 id="modal6-title"><i class="fas fa-upload"></i> Tela de Criativos</h3>
+            <ul>
+              <li><p><i class="fas fa-exclamation-triangle"></i> <b>Desafio:</b> Criar uma tela para que seja possível realizar o Upload de criativos de forma manual.
                 <br>Os criativos podem ser imagens, vídeos ou links de postagens. A taxonomia e o trackcode das campanhas são digitados na tela.
                 O processo também transforma vídeos em gifs.
                 
                 <br><br>
                 Os arquivos de imagens e gifs são armazenados no Storage. Os dados de texto (taxonomia e trackcode) são armazenados no BigQuery.
-              </p>
-              <p class="modal-results">
-                <i class="fas fa-trophy"></i><b>Resultados:</b> Agilizar o processo manual do Upload do criativo que não foi possível extrair de forma automática.
-                Também preserva o histórico do arquivo, tornando-o acessível para uso em dashboards e relatórios. </p>
-              <p class="modal-role">
-                <i class="fas fa-user"></i><b>Meu papel:</b> Desenvolvimento do script
-                de automação.
-              </p>
-              <p class="modal-tec">
-                <i class="fas fa-briefcase"></i><b>Clientes:</b> Samsung
-              </p>
-              <hr />
-              <p class="modal-tec">
-                <i class="fas fa-code"></i><b>Tecnologias:</b> Python | BigQuery |
-                Google Storage | API | C# | Angular
-              </p>
-              <p class="modal-date">
-                <i class="fas fa-calendar-alt"></i><b>Data:</b> Janeiro de 2025
-              </p>
-            </div>
+              </p></li>
+              <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b>Agilizar o processo manual do Upload do criativo que não foi possível extrair de forma automática.
+                Também preserva o histórico do arquivo, tornando-o acessível para uso em dashboards e relatórios.</p></li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Desenvolvimento do script de automação.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Samsung</li>
+              <hr />            
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Python | BigQuery | Google Storage | API | C# | Angular</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Janeiro de 2025</li>
+            </ul>
           </div>
-          <!----------------------- Fim ------------------->
+        </div>
 
 
-
-          <!----------------------- Inicio ------------------->
-          <!-- card -->
-          <div class="card">
-            <div class="card-header"></div>
-            <div class="card-content">
-              <h3 class="card-title">Criativos - Meta</h3>
-              <p class="card-description">
-                <i class="fas fa-info-circle"></i> Automação para extrair e armazenar os criativos de Meta em um Storage do Google Cloud.
-              </p>
-              <button class="card-button" onclick="openModal('modal-3')">
-                Saiba Mais
-              </button>
-            </div>
+        <!-- Card 7 -->
+        <div class="card">
+          <div class="card-header"><i class="fab fa-meta"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> Criativos - Meta</h3>
+            <p class="card-description">
+              Automação para extrair e armazenar os criativos de Meta em um Storage do Google Cloud.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre Criativos Meta" onclick="openModal('modal-7')">Saiba Mais</button>
           </div>
-          <!-- Modal Maior -->
-          <div id="modal-3" class="modal">
-            <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-3')"
-                >&times;</span
-              >
-              <h3 class="modal-title">Upload Criativos</h3>
-              <p class="modal-description">
-                <i class="fas fa-info-circle"></i> Automação para extrair e armazenar os criativos de Meta em um Storage do Google Cloud.
-              </p>
-              <hr />
-              <p class="modal-challenge">
-                <i class="fas fa-exclamation-triangle"></i><b>Desafio:</b> Realizar o download dos criativos das campanhas nos formatos (jpeg, png, vídeo) e             
+        </div>
+        <!-- Modal 7 -->
+        <div id="modal-7" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal7-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-7')">&times;</button>
+            <h3 id="modal7-title"><i class="fas fa-images"></i> Criativos - Meta</h3>
+            <ul>
+              <li><p><i class="fas fa-exclamation-triangle"></i> <b>Desafio:</b>  Realizar o download dos criativos das campanhas nos formatos (jpeg, png, vídeo) e             
                 armazenar permanentemente. O processo também transforma vídeos em gifs e realiza o Web Scraping para extrair a taxonomia e o trackcode das campanhas.
                 
                 <br><br>
                 A automação coleta esses arquivos da biblioteca de criativos da META e os armazena no Storage.
-                Os dados de texto (taxonomia e trackcode) são armazenados no BigQuery.
-              </p>
-              <p class="modal-results">
-                <i class="fas fa-trophy"></i><b>Resultados:</b> Preservação do histórico de arquivos, evitando que expirem e 
-                tornando-os acessíveis para uso em dashboards e relatórios.
-              </p>
-              <p class="modal-role">
-                <i class="fas fa-user"></i><b>Meu papel:</b> Desenvolvimento do script
-                de automação.
-              </p>
-              <p class="modal-tec">
-                <i class="fas fa-briefcase"></i><b>Clientes:</b> Samsung
-              </p>
-              <hr />
-              <p class="modal-tec">
-                <i class="fas fa-code"></i><b>Tecnologias:</b> Python | BigQuery |
-                Google Storage | API | C# | Web Scraping
-              </p>
-              <p class="modal-date">
-                <i class="fas fa-calendar-alt"></i><b>Data:</b> Julho de 2024
-              </p>
-            </div>
-          </div>
-          <!----------------------- Fim ------------------->
-
-          <!----------------------- Inicio ------------------->
-          <!-- card -->
-          <div class="card">
-            <div class="card-header"></div>
-            <div class="card-content">
-              <h3 class="card-title">Integração de APIs</h3>
-              <p class="card-description">
-                <i class="fas fa-info-circle"></i> Automação para extração de dados de diversas 
-                plataformas de veiculação de mídia.
-              </p>
-              <button class="card-button" onclick="openModal('modal-2')">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <!-- Modal Maior -->
-          <div id="modal-2" class="modal">
-            <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-2')"
-                >&times;</span
-              >
-              <h3 class="modal-title">Integração de APIs</h3>
-              <p class="modal-description">
-                <i class="fas fa-info-circle"></i>Desenvolvi e realizei
-                manunentação em diversas APIs para extrair dados de plataformas de veiculação de mídia 
-                desde o início da minha atuação na empresa.
-              </p>
-              <hr />
-              <p class="modal-challenge">
-                <i class="fas fa-exclamation-triangle"></i><b>Desafio:</b> Criar extratores de dados, realizar manutenção contínua, corrigir bugs e implementar 
-                melhorias no processo ao longo do tempo que estavam ativas.
-              </p>
-              <p class="modal-results">
-                <i class="fas fa-trophy"></i><b>Resultados:</b> Os dados extraídos foram utilizados pela equipe de BI para alimentar dashboards 
-                e apoiar o fechamento financeiro mensal da empresa.
-              </p>
-              <p class="modal-role">
-                <i class="fas fa-user"></i><b>Meu papel:</b> Desenvolver e realizar
-                manutenção.
-              </p>
-              <hr />
-              <p class="modal-tec">
-                <i class="fas fa-briefcase"></i><b>Clientes:</b> Agência
-              </p>
-              <hr />
-              <p class="modal-tec">
-                <i class="fas fa-code"></i><b>Tecnologias:</b> C# | BigQuery | SQL
-                Server
-              </p>
-              <p class="modal-date">
-                <i class="fas fa-calendar-alt"></i><b>Data:</b> Desde Janeiro de 2020
-              </p>
-            </div>
-          </div>
-          <!----------------------- Fim ------------------->
-
-          <!----------------------- Inicio ------------------->
-          <!-- card -->
-          <div class="card">
-            <div class="card-header"></div>
-            <div class="card-content">
-              <h3 class="card-title">SFE/SGB</h3>
-              <p class="card-description">
-                <i class="fas fa-info-circle"></i> Suporte e manutenção ao SFE/SGB, sistema de gerenciamento financeiro da empresa.
-              </p>
-              <button class="card-button" onclick="openModal('modal-1')">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <!-- Modal Maior -->
-          <div id="modal-1" class="modal">
-            <div class="modal-content">
-              <span class="modal-close" onclick="closeModal('modal-1')"
-                >&times;</span
-              >
-              <h3 class="modal-title">SFE/SGB</h3>
-              <p class="modal-description">
-                <i class="fas fa-info-circle"></i>O SFE/SGB é um sistema de Gerenciamento Financeiro que foi utilizado por todas as equipes 
-                da empresa para realizar o Forecast e o Fechamento Mensal do faturamento. <br> Ele integra APIs, gera diversos relatórios 
-                de investimentos e permite a criação de Pedidos de Inserção (PIs Mídias e Financeiro).
-              </p>
-              <hr />
-              <p class="modal-challenge">
-                <i class="fas fa-exclamation-triangle"></i><b>Desafio:</b> Oferecer suporte, realizar manutenção contínua, corrigir bugs e desenvolver novas funcionalidades no sistema.
-              </p>
-              <p class="modal-results">
-                <i class="fas fa-trophy"></i><b>Resultados:</b> O sistema auxiliou o time financeiro, gerentes e analistas nos períodos de faturamento e forecast, 
-                automatizando a criação e o envio dos PIs de faturamento das mídias veiculadas e dos PIs de valores fixos dos contratos com clientes.
-              </p>
-              <p class="modal-role">
-                <i class="fas fa-user"></i><b>Meu papel:</b> Suporte e manutenção.
-              </p>
-              <p class="modal-tec">
-                <i class="fas fa-briefcase"></i><b>Clientes:</b> Agência
-              </p>
-              <hr />
-              <p class="modal-tec">
-                <i class="fas fa-code"></i><b>Tecnologias:</b> C# | VuesJs | BigQuery
-                | SQL Server
-              </p>
-              <p class="modal-date">
-                <i class="fas fa-calendar-alt"></i><b>Data:</b> De Jan/2020 a Jul/2024
-              </p>
-            </div>
-          </div>
-          <!----------------------- Fim ------------------->
-
-          <!-- Card Placeholder "Em breve" -->
-          <div class="card-placeholder">
-            <h3 class="card-placeholder-title">
-              Novos Projetos <br />
-              Em breve...
-            </h3>
+                Os dados de texto (taxonomia e trackcode) são armazenados no BigQuery.</p></li>
+              <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b> Preservação do histórico de arquivos, evitando que expirem e 
+                tornando-os acessíveis para uso em dashboards e relatórios.</p></li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Desenvolvimento do script de automação.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Samsung</li>
+              <hr />            
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Python | BigQuery | Google Storage | API | C# | Web Scraping</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Julho de 2024</li>
+            </ul>
           </div>
         </div>
-      </section>
 
-      <footer>
-        <p class="footer">
-          "As grandes ideias surgem da observação dos pequenos detalhes" -
-          Augusto Cury.
-        </p>
-        <br />
-      </footer>
-    </main>
+        <!-- Card 8 -->
+        <div class="card">
+          <div class="card-header"><i class="fas fa-plug"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> Integração de APIs</h3>
+            <p class="card-description">
+              Automação para extração de dados de diversas plataformas de mídia.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre Integração de APIs" onclick="openModal('modal-8')">Saiba Mais</button>
+          </div>
+        </div>
+        <!-- Modal 8 -->
+        <div id="modal-8" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal8-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-8')">&times;</button>
+            <h3 id="modal8-title"><i class="fas fa-network-wired"></i> Integração de APIs</h3>
+            <ul>
+              <li><p><i class="fas fa-exclamation-triangle"></i> <b>Desafio:</b> Criar extratores de dados, realizar manutenção contínua, corrigir bugs e implementar 
+                melhorias no processo ao longo do tempo que estavam ativas.</p></li>
+              <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b> Os dados extraídos foram utilizados pela equipe de BI para alimentar dashboards 
+                e apoiar o fechamento financeiro mensal da empresa.</p></li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Desenvolvimento e manutenção.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Agência</li>
+              <hr />            
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> C# | BigQuery | SQL Server</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Desde Janeiro de 2020</li>
+            </ul>
+          </div>
+        </div>
 
-    <script>
-      function openModal(modalId) {
-        document.getElementById(modalId).style.display = "block";
+        <!-- Card 9 -->
+        <div class="card">
+          <div class="card-header"><i class="fas fa-coins"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> SFE/SGB</h3>
+            <p class="card-description">
+               Suporte e manutenção ao SFE/SGB, sistema de gerenciamento financeiro da empresa.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre SFE/SGB" onclick="openModal('modal-9')">Saiba Mais</button>
+          </div>
+        </div>
+        <!-- Card Placeholder -->
+          <div class="card-placeholder">
+            <h3><i class="fas fa-hourglass-half"></i><br>Novos Projetos<br>Em breve...</h3>
+          </div>
+        </div>
+        <!-- Modal 9 -->
+        <div id="modal-9" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal9-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-9')">&times;</button>
+            <h3 id="modal9-title"><i class="fas fa-file-invoice-dollar"></i> SFE/SGB</h3>
+            <ul>
+              <li><p><i class="fas fa-exclamation-triangle"></i> <b>Desafio:</b> Oferecer suporte, realizar manutenção contínua, corrigir bugs e desenvolver novas funcionalidades no sistema.</p></li>
+              <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b> O sistema auxiliou o time financeiro, gerentes e analistas nos períodos de faturamento e forecast, 
+                automatizando a criação e o envio dos PIs de faturamento das mídias veiculadas e dos PIs de valores fixos dos contratos com clientes.</p></li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Suporte e manutenção.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Agência</li>
+              <hr />            
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> C# | VuesJs | BigQuery | SQL Server</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> De Jan/2020 a Jul/2024</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <p class="footer">
+      <span>
+         "As grandes ideias surgem da observação dos pequenos detalhes" - Augusto Cury. <br><br>
+        <a class="footer-contact" href=""><i class="fab fa-github"></i></a>
+        <a class="footer-contact" href="https://www.linkedin.com/in/edson-monteiro-41b692149/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </span>     
+    </p>
+  </footer>
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+      document.getElementById(id).focus();
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+    // Fechar modal ao clicar fora
+    window.onclick = function(event) {
+      document.querySelectorAll('.modal').forEach(function(modal) {
+        if (event.target === modal) modal.style.display = "none";
+      });
+    }
+    // Fechar modal com ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        document.querySelectorAll('.modal').forEach(function(modal) {
+          modal.style.display = "none";
+        });
       }
-
-      function closeModal(modalId) {
-        document.getElementById(modalId).style.display = "none";
-      }
-    </script>
-  </body>
+    });
+  </script>
+</body>
 </html>
