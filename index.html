@@ -23,8 +23,115 @@
       <p class="portfolio-desc">
         Confira alguns projetos que tive participação na Essence Mediacom Brasil.
       </p>
+
+
+      <!--Início dos cards -->
       <div class="portfolio-cards">
-        <!-- Card 1 -->
+        
+
+         <!-- Card 12 -->
+        <div class="card">
+          <div class="card-header"><i class="fas fa-user-shield"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> DCR - BRF</h3>
+            <p class="card-description">
+               Um ambiente seguro e criptografado para automação de dados de CRM e modelagem de audiências e ativação nas plataformas de mídias.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre Data Clean Room" onclick="openModal('modal-12')">Saiba Mais</button>
+          </div>
+        </div>
+        <!-- Modal 12 -->
+        <div id="modal-12" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal12-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-12')">&times;</button>
+            <h3 id="modal12-title"><i class="fas fa-shield-alt"></i> DATA CLEAN ROOM (DCR) - BRF </h3>
+            <ul>
+              <li> <p><i class="fas fa-exclamation-triangle"></i>  <b> Desafio:</b> 
+                  Reaproveitar a arquitetura do projeto que já temos em casa e criar um 'mine' DCR para BRF. Nesse caso usaremos uma base única de dados disponibilizada pelo cliente.
+                  <br><br>
+                        
+                  <b>1 ª</b> - Extração e normalização: <br>
+                      Coleta, padronização e proteção dos dados.<br><br>
+
+                  <b>2 ª</b> - Modelagem e mapeamento das audiências:<br>
+                      Estruturação das audiências conforme requisitos de cada plataforma.<br><br>
+
+                  <b>3 ª</b> - Ativação das audiências nas plataformas:<br>
+                        Envio e ativação via APIs de forma automatizada.<br></p></li>
+              <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b>Aguardando...</p></li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Desenvolvimento do projeto.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> BRF</li>
+              <hr />
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Python | DBT | GCP | SFTP | BigQuery</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Dezembro de 2025</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Card 10 -->
+        <div class="card">
+          <div class="card-header"><i class="fas fa-user-shield"></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> Análise de IA do Meridian</h3>
+            <p class="card-description">
+               Automação para inserir uma analise feita pela IA, nos resultados do Meridian.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre Data Clean Room" onclick="openModal('modal-10')">Saiba Mais</button>
+          </div>
+        </div>
+        <!-- Modal 10 -->
+        <div id="modal-10" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal10-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-10')">&times;</button>
+            <h3 id="modal10-title"><i class="fas fa-shield-alt"></i> Análise de IA no HTML do Meridian </h3>
+            <ul>
+              <li> <p><i class="fas fa-exclamation-triangle"></i>  <b> Desafio:</b> 
+                Criar uma automação para inserir a analise que IA (Gemine) fez dos gráficos do Meridian, no próprio resultado do HTML do Meridian</p></li>
+                        
+              <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b>Facilitar a interpretação dos gráficos</p></li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Auxílio do desenvolvimento do projeto.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Stellantis</li>
+              <hr />
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Gemine IA | Python | Docker</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Novembro de 2025</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Card 11 -->
+        <div class="card">
+          <div class="card-header"><i class="fas fa-plug"></i></i></div>
+          <div class="card-content">
+            <h3 class="card-title"> Extrator de dados da Tabela FIPE</h3>
+            <p class="card-description">
+               Automação para extrair dados de veículos da Tabela FIPE.
+            </p>
+            <button class="card-button" aria-label="Saiba mais sobre Data Clean Room" onclick="openModal('modal-11')">Saiba Mais</button>
+          </div>
+        </div>
+        <!-- Modal 11 -->
+        <div id="modal-11" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal11-title">
+          <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-11')">&times;</button>
+            <h3 id="modal11-title"><i class="fas fa-network-wired"></i> Extrator de dados da Tabela FIPE </h3>
+            <ul>
+              <li> <p><i class="fas fa-exclamation-triangle"></i>  <b> Desafio:</b> 
+                  Migrar o código que era executado manualmente no Colab para nossa arquitetura em Python, automatizando sua execução no GCP, 
+                  armazenando os dados no banco e enviando um alerta por e-mail informando o status a cada execução do processo.</p></li>
+                        
+              <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b>O processo roda 2x no mês de forma totalmente automática</p></li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Desenvolvimento do projeto.</li>
+              <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Stellantis</li>
+              <hr />
+              <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Python | Docker | GCP | BigQuery</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Novembro de 2025</li>
+            </ul>
+          </div>
+        </div>
+
+            <!-- Card 1 -->
         <div class="card">
           <div class="card-header"><i class="fas fa-database"></i></div>
           <div class="card-content">
@@ -56,7 +163,7 @@
         <div class="card">
           <div class="card-header"><i class="fas fa-user-shield"></i></div>
           <div class="card-content">
-            <h3 class="card-title"> Data Clean Room - DCR</h3>
+            <h3 class="card-title"> DCR - MARS</h3>
             <p class="card-description">
                Um ambiente seguro e criptografado para automação de dados de CRM e modelagem de audiências e ativação nas plataformas de mídias.
             </p>
@@ -67,10 +174,10 @@
         <div id="modal-2" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal2-title">
           <div class="modal-content">
             <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-2')">&times;</button>
-            <h3 id="modal2-title"><i class="fas fa-shield-alt"></i> Data Clean Room - DCR</h3>
+            <h3 id="modal2-title"><i class="fas fa-shield-alt"></i> DATA CLEAN ROOM (DCR) - MARS</h3>
             <ul>
               <li> <p><i class="fas fa-exclamation-triangle"></i>  <b> Desafio:</b> 
-                Para atender às necessidades do projeto, a arquitetura foi estruturada em três grandes etapas: <br><br>
+                Criar um DCR do zero. E para atender às necessidades do projeto, a arquitetura foi estruturada em três grandes etapas: <br><br>
                         
                   <b>1 ª</b> - Extração, normalização e criptografia dos dados: <br>
                       Coleta, padronização e proteção dos dados.<br><br>
@@ -85,7 +192,7 @@
               <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Mars</li>
               <hr />
               <li><i class="fas fa-code"></i> <b>Tecnologias:</b> Python | DBT | GCP | SFTP | BigQuery</li>
-              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> Agosto de 2025</li>
+              <li><i class="fas fa-calendar-alt"></i> <b>Data:</b> De Fev/2025 a Set/2025</li>
             </ul>
           </div>
         </div>
@@ -119,7 +226,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="card">
+        <!-- <div class="card">
           <div class="card-header"><i class="fas fa-bullhorn"></i></div>
           <div class="card-content">
             <h3 class="card-title"> Extrator de Dados Globo Ads</h3>
@@ -128,9 +235,9 @@
             </p>
             <button class="card-button" aria-label="Saiba mais sobre Extrator de Dados Globo Ads" onclick="openModal('modal-4')">Saiba Mais</button>
           </div>
-        </div>
+        </div> -->
         <!-- Modal 4 -->
-        <div id="modal-4" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal4-title">
+        <!-- <div id="modal-4" class="modal" tabindex="0" aria-modal="true" aria-labelledby="modal4-title">
           <div class="modal-content">
             <button class="modal-close" aria-label="Fechar modal" onclick="closeModal('modal-4')">&times;</button>
             <h3 id="modal4-title"><i class="fas fa-ad"></i> Extrator de Dados Globo Ads</h3>
@@ -145,7 +252,7 @@
             </ul>
 
           </div>
-        </div>
+        </div> -->
 
         <!-- Card 5 -->
         <div class="card">
@@ -289,6 +396,7 @@
             <button class="card-button" aria-label="Saiba mais sobre SFE/SGB" onclick="openModal('modal-9')">Saiba Mais</button>
           </div>
         </div>
+        
         <!-- Card Placeholder -->
           <div class="card-placeholder">
             <h3><i class="fas fa-hourglass-half"></i><br>Novos Projetos<br>Em breve...</h3>
@@ -303,7 +411,7 @@
               <li><p><i class="fas fa-exclamation-triangle"></i> <b>Desafio:</b> Oferecer suporte, realizar manutenção contínua, corrigir bugs e desenvolver novas funcionalidades no sistema.</p></li>
               <li><p><i class="fas fa-trophy"></i> <b>Resultados:</b> O sistema auxiliou o time financeiro, gerentes e analistas nos períodos de faturamento e forecast, 
                 automatizando a criação e o envio dos PIs de faturamento das mídias veiculadas e dos PIs de valores fixos dos contratos com clientes.</p></li>
-              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Suporte e manutenção.</li>
+              <li><i class="fas fa-user"></i> <b>Meu papel:</b> Suporte e manutenção contínua.</li>
               <li><i class="fas fa-briefcase"></i> <b>Clientes:</b> Agência</li>
               <hr />            
               <li><i class="fas fa-code"></i> <b>Tecnologias:</b> C# | VuesJs | BigQuery | SQL Server</li>
@@ -311,8 +419,12 @@
             </ul>
           </div>
         </div>
-    </section>
+
+    </section>    
   </main>
+
+
+  
   <footer>
     <p class="footer">
       <span>
